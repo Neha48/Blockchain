@@ -1,0 +1,13 @@
+table tr td span{
+    width:15em;
+    display: block;
+    color: #0079c1;
+    height: 2em; 
+    line-height: 1em; 
+    margin-bottom: 1px;
+    word-break: break-all;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.table-container{margin-top: 1em;}

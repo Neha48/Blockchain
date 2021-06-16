@@ -1,0 +1,33 @@
+<div class="container"> 
+  <div class="m-5">
+    <h2>Blockchain Implementation</h2>
+  </div>
+  <div class="row">
+    <div class="col-6"><button type="button" class="form-inline btn btn-primary" (click)="createWallet()">Create Wallet</button></div>
+    <div class="col-4 offset-lg-2 form-group form-inline">
+      <!-- <form class="form-horizontal" [formGroup]="amountForm" (ngSubmit)="onSubmit()"> -->
+        <!-- <input type="number" class="input" placeholder="Amount" name="amt"/> -->
+        <button type="submit" class=" btn btn-success" (click)="openDialog(this)">Send amount</button>
+      <!-- </form> -->
+    </div>
+  </div>
+  <div class="table-container">
+    <caption><h2>Transactions</h2></caption>    
+    <table class="table table-responsive">
+      <thead>
+        <th>Payer</th>
+        <th>Mined</th>
+        <th>Amount</th>
+        <th>Payee</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of minechain">
+          <td><span>{{i.chain.transaction.payer}}</span></td>
+          <td><span>{{i.mine}}</span></td>
+          <td><span>{{i.chain.transaction.amount}}</span></td>
+          <td><span>{{i.chain.transaction.payee}}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
