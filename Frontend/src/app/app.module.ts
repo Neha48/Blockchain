@@ -11,9 +11,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { KeyDialogComponent } from './keydialog/keydialog.component';
+import { DetailDialogComponent } from './detaildialog/detaildialog.component';
 @NgModule({
   declarations: [
-    AppComponent,DialogComponent,KeyDialogComponent
+    AppComponent,DialogComponent,KeyDialogComponent,DetailDialogComponent
   ],
   imports: [
     BrowserModule,

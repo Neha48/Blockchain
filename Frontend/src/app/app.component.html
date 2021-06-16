@@ -21,7 +21,7 @@
         <th>Payee</th>
       </thead>
       <tbody>
-        <tr *ngFor="let i of minechain">
+        <tr *ngFor="let i of minechain" (click)="openDetails(i.chain)">
           <td><span>{{i.chain.transaction.payer}}</span></td>
           <td><span>{{i.mine}}</span></td>
           <td><span>{{i.chain.transaction.amount}}</span></td>

@@ -1,6 +1,6 @@
 <form [formGroup]="amountForm" class="form-group">
     <input type="number" class="input form-control" placeholder="Amount" formControlName="amt" name="amt" /><br>
     <input type="text" class="input form-control" placeholder="Receiver key" formControlName="recKey" name="recKey" /><br>
-    <button type="submit" class=" btn btn-success" (click)="onSubmit($event)">Send</button>
-    <button type="reset" class=" btn btn-warning" (click)="close()">Cancel</button>
+    <button type="submit" class=" btn btn-success right" (click)="onSubmit($event)">Send</button>
+    <button type="reset" class=" btn btn-warning right" (click)="close()">Cancel</button>
 </form>

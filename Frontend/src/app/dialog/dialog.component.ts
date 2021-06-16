@@ -7,6 +7,9 @@ import { BlockServiceService } from '../block-service.service';
 @Component({
   selector: 'app-dialog',
   templateUrl: './dialog.component.html',
+  styles:[`
+    .right{float:right}
+  `]
 //   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {

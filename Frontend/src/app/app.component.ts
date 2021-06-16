@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 import { BlockServiceService } from './block-service.service';
+import { DetailDialogComponent } from './detaildialog/detaildialog.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { KeyDialogComponent } from './keydialog/keydialog.component';
 
@@ -72,5 +73,12 @@ export class AppComponent {
         console.log("err");
       // this.amountForm.resetForm();
 
+  }
+  openDetails(i){
+    const dialogConfig=new MatDialogConfig();
+    dialogConfig.autoFocus=true;
+    dialogConfig.data=i;
+    console.log(dialogConfig.data);
+    let dialogref = this.dialog.open(DetailDialogComponent,dialogConfig);
   }
 }
