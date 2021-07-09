@@ -1,6 +1,7 @@
+<button type="reset" mat-icon-button class="right close text-danger" (click)="close()"><mat-icon>close</mat-icon></button>
+
 <form [formGroup]="amountForm" class="form-group">
     <input type="number" class="input form-control" placeholder="Amount" formControlName="amt" name="amt" /><br>
     <input type="text" class="input form-control" placeholder="Receiver key" formControlName="recKey" name="recKey" /><br>
-    <button type="submit" class=" btn btn-success right" (click)="onSubmit($event)">Send</button>
-    <button type="reset" class=" btn btn-warning right" (click)="close()">Cancel</button>
-</form>
+    <button type="submit" mat-icon-button class="text-success right" (click)="onSubmit($event)"><mat-icon>send</mat-icon></button>
+   </form>

@@ -9,6 +9,7 @@ import { BlockServiceService } from '../block-service.service';
   templateUrl: './dialog.component.html',
   styles:[`
     .right{float:right}
+    .close{top:-10px;right:-10px;position:relative;min-width:auto;}
   `]
 //   styleUrls: ['./dialog.component.css']
 })

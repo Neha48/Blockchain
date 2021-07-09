@@ -1,22 +1,32 @@
-<div class="card">
+<mat-card class="example-card">
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <mat-card-title>Details</mat-card-title>
+      <mat-card-subtitle>Transaction</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image height="100px" width="100px" src="https://ourbitcoinnews.sfo2.digitaloceanspaces.com/2020/06/03-Ransom.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+<!-- <div class="card"> -->
     <table class="table table-condensed">
         <tr>
-            <td><h5>Previous Hash</h5></td>           <td>{{prevHash}}</td>
+            <td><h6>Previous Hash</h6></td>           <td>{{prevHash}}</td>
         </tr>
         <tr>
-            <td><h5>Sender</h5></td>               <td>{{sender}}</td>
+            <td><h6>Sender</h6></td>               <td>{{sender}}</td>
         </tr>
         <tr>
-            <td><h5>Amount</h5></td>               <td>{{amount}}</td>
+            <td><h6>Amount</h6></td>               <td>{{amount}}</td>
         </tr>
         <tr>
-            <td><h5>Receiver</h5></td>              <td>{{receiver}}</td>
+            <td><h6>Receiver</h6></td>              <td>{{receiver}}</td>
         </tr>
         <tr>
-            <td><h5>Time</h5></td>               <td>{{time}}</td>
+            <td><h6>Time</h6></td>               <td>{{time}}</td>
         </tr>
         <tr>
-            <td><h5>Nonce</h5></td>              <td>{{nonce}}</td>
+            <td><h6>Nonce</h6></td>              <td>{{nonce}}</td>
         </tr>
     </table>
-</div>
+<!-- </div> -->
+</mat-card-content>
+</mat-card>
